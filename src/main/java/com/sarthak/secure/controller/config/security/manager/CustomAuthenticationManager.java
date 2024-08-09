@@ -22,6 +22,6 @@ public class CustomAuthenticationManager implements AuthenticationManager {
             return customAuthenticationProvider.authenticate(authentication);
         }
 
-        throw new BadCredentialsException("Unauthorized");
+        return authentication;
     }
 }

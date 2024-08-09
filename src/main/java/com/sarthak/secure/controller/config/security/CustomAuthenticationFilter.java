@@ -28,6 +28,8 @@ public class CustomAuthenticationFilter extends OncePerRequestFilter {
         if (a.isAuthenticated()) {
             SecurityContextHolder.getContext().setAuthentication(a);
             filterChain.doFilter(request, response);
+        } else {
+            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
         }
     }
 }

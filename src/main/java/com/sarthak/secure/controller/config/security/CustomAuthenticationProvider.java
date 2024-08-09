@@ -25,7 +25,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
         }
 
 
-        throw new BadCredentialsException("Unauthorized");
+        return authentication;
     }
 
     @Override
