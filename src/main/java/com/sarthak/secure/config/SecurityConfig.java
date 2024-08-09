@@ -1,4 +1,4 @@
-package com.sarthak.secure.controller.config;
+package com.sarthak.secure.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

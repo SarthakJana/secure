@@ -1,2 +1,15 @@
-package com.sarthak.secure.entity;public class User {
+package com.sarthak.secure.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+@AllArgsConstructor
+@Getter
+@Setter
+public class User {
+
+    private String name;
+    private String password;
+
 }
