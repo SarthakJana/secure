@@ -11,6 +11,9 @@ server:
   servlet:
     context-path: /secure
 
+app:
+  secret: top-secret
+
 management:
   endpoints:
     web:
