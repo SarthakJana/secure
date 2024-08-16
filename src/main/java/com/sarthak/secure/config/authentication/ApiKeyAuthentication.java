@@ -10,11 +10,16 @@ import java.util.Collection;
 public class ApiKeyAuthentication implements Authentication {
 
     private final String key;
-    private final boolean authenticated;
+    private boolean authenticated;
 
     @Override
     public boolean isAuthenticated() {
         return authenticated;
+    }
+
+    @Override
+    public void setAuthenticated(boolean authenticated) throws IllegalArgumentException {
+        this.authenticated = authenticated;
     }
 
     @Override
@@ -38,12 +43,11 @@ public class ApiKeyAuthentication implements Authentication {
     }
 
     @Override
-    public void setAuthenticated(boolean isAuthenticated) throws IllegalArgumentException {
-
-    }
-
-    @Override
     public String getName() {
         return null;
+    }
+
+    public String key() {
+        return key;
     }
 }
