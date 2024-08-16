@@ -1,4 +1,4 @@
-package com.sarthak.secure.controller.config.security;
+package com.sarthak.secure.config.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

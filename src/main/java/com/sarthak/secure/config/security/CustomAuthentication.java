@@ -1,4 +1,4 @@
-package com.sarthak.secure.controller.config.security;
+package com.sarthak.secure.config.security;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
